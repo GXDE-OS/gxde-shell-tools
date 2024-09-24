@@ -1,0 +1,6 @@
+gxde-shell-tools (1.0.0) UNRELEASED; urgency=low
+
+  * Initial release. Closes: #nnnn
+    <nnnn is the bug number of your ITP>
+
+ -- shenmo <shenmo@spark-app.store>  Tue, 24 Sep 2024 11:52:12 +0800
