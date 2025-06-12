@@ -1,6 +1,5 @@
-gxde-shell-tools (1.0.0) UNRELEASED; urgency=low
+gxde-shell-tools (1.0.1) UNRELEASED; urgency=low
 
-  * Initial release. Closes: #nnnn
-    <nnnn is the bug number of your ITP>
+  * depend on gxde-desktop
 
  -- shenmo <shenmo@spark-app.store>  Tue, 24 Sep 2024 11:52:12 +0800
