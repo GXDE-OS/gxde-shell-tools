@@ -12,5 +12,5 @@ Rules-Requires-Root: no
 Package: gxde-shell-tools
 Architecture: all
 Multi-Arch: foreign
-Depends: ${misc:Depends},gxde-app-installer,gxde-app-upgrader,gxde-app-uninstaller, gxde-desktop
+Depends: ${misc:Depends},gxde-app-installer,gxde-app-upgrader,gxde-app-uninstaller
 Description: Meta package to install gxde shell tools
