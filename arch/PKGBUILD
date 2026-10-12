@@ -1,0 +1,24 @@
+# Maintainer: CharOfString <root@charofstring.cc>
+pkgname=gxde-shell-tools-git
+pkgver=1.0.2
+pkgrel=1
+pkgdesc='Metapackage for the GXDE shell tools'
+arch=('any')
+url="https://github.com/GXDE-OS/gxde-shell-tools"
+license=('CC-BY-NC-SA-4.0')
+depends=('gxde-app-installer-git' 'gxde-app-upgrader-git' 'gxde-app-uninstaller-git')
+makedepends=('git')
+provides=('gxde-shell-tools')
+conflicts=('gxde-shell-tools')
+source=()
+sha512sums=()
+
+# 直接使用 PKGBUILD 所在的 git 仓库作为源码 ・ Build from the git checkout this PKGBUILD lives in.
+_srcroot() {
+  git -C "$startdir" rev-parse --show-toplevel
+}
+
+package() {
+  # CC-BY-NC-SA-4.0 不是通用许可证，需随包附带 ・ CC-BY-NC-SA-4.0 is not a common license, ship its text.
+  install -Dm644 "$(_srcroot)/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
