@@ -1,15 +1,16 @@
 # Maintainer: CharOfString <root@charofstring.cc>
-pkgname=gxde-shell-tools-git
+pkgname=gxde-shell-tools
 pkgver=1.0.2
 pkgrel=1
 pkgdesc='Metapackage for the GXDE shell tools'
 arch=('any')
 url="https://github.com/GXDE-OS/gxde-shell-tools"
 license=('CC-BY-NC-SA-4.0')
-depends=('gxde-app-installer-git' 'gxde-app-upgrader-git' 'gxde-app-uninstaller-git')
+depends=('gxde-app-installer' 'gxde-app-upgrader' 'gxde-app-uninstaller')
 makedepends=('git')
-provides=('gxde-shell-tools')
-conflicts=('gxde-shell-tools')
+provides=("gxde-shell-tools-git=$pkgver")
+conflicts=('gxde-shell-tools-git')
+replaces=('gxde-shell-tools-git')
 source=()
 sha512sums=()
 
